@@ -1,0 +1,94 @@
+@import 'colors';
+
+.set-current-date{
+	width: 50px;
+    background: rgb(65, 196, 5);
+	border-radius: 3px;
+    padding: 3px;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+    text-align: center;
+	color: white;
+	margin: 5px auto;
+	transition: all .25s;
+	&:hover{
+		background: rgb(58, 165, 8);
+	}
+}
+
+.calendar{
+	transition: all .25s;
+	border-radius: 3px;
+	background: white;
+	overflow: hidden;
+	& .calendar-controls{
+		position: relative;
+		top: 5px;
+		display: flex;
+		justify-content: space-between;
+		margin: 0px 10px;
+		padding-bottom: 4px;
+		font-size: 20px;
+		& .date-labels{
+			display: flex;
+			justify-content: space-between;
+			width: 100px;
+			text-transform: uppercase;
+			font-weight: 600;
+		}
+		& .page-back, & .page-forward{
+			position:relative;
+			transition: all .25s;
+			font-size:15px;
+			color: $blue;
+			top: 8px;
+		}	
+		& .page-back{
+			right:-10px;
+			&:hover{
+				right:-7px;
+			}
+		} 
+		& .page-forward{
+			left: -10px;
+			&:hover{
+				left:-7px;
+			}
+		}	
+	}
+	& .week-cells{
+		display: flex;
+		justify-content: space-around;
+		font-size: 12px;
+		padding:10px 0px 5px 0px;
+		text-align: center;
+		& div{
+			width:20px;
+		}	
+	}
+	& .day-cells{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		font-size: 14px;
+		background: white;
+		& div{
+			text-align: center;
+			padding: 5px;
+			width:20px;
+			border-radius: 2px;
+			&:hover{
+				background: $blue;
+				color: white;
+			}
+		}
+		& .notCurrent{
+			color: $grey;
+		}
+	}
+}
+.shown .calendar{
+	height: 100%;
+	background: $lightGrey;
+}

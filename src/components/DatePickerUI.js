@@ -17,13 +17,12 @@ class DatePickerUI extends React.Component{
 	}
 
 	advanceDay( theWay ){
-		console.log(theWay)
 		this.setState({
 			monthToShow: this.state.monthToShow + theWay
 		})
 	}
 
-	render(){
+	render(){ 
 		let year = new Date( this.state.yearToShow, this.state.monthToShow ).getFullYear();
 		let month = new Date( this.state.yearToShow, this.state.monthToShow ).getMonth();
 		return (
@@ -35,7 +34,10 @@ class DatePickerUI extends React.Component{
 						<RightArr onClick={ ()=>{ this.advanceDay( 1 ) }} />
 					</div>
 					<WeekDaysrow />
-					<DaysGrid month={ month } year={ year }/>
+					<DaysGrid 
+						month={ month } 
+						year={ year } 
+						onDatePick={ ( dateObj )=>{ this.props.onDatePick( dateObj ) } }/>
 				</div>
 			</div>
 		)

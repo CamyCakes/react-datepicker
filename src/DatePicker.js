@@ -13,7 +13,7 @@ class DatePicker extends React.Component{
 		super( props )
 		this.state = {
 			date: '--/--/----',
-			dateVal: '00000000',
+			dateInputVal: '0000-00-00',
 			datePickerUi: 'hidden'
 		}
 	}
@@ -54,6 +54,17 @@ class DatePicker extends React.Component{
 		});
 	}
 
+	onDatePick( dateObj ){
+		let { month, day, year } = dateObj;
+		let m2 = month.toString().length < 2 ? '0' + month: month;
+		let d2 = day.toString().length < 2 ? '0' + day: day;
+
+		this.setState({
+			date: `${month}/${day}/${year}`,
+			dateInputVal: `${year}-${m2}-${d2}`
+		})
+	}
+
 	render(){
 		return (
 			<div className="date-picker-cont" ref={ node => this.node = node}>
@@ -66,8 +77,9 @@ class DatePicker extends React.Component{
 					<DateOutPut date={ this.state.date } />
 					<DatePickerUI 
 						show={ this.state.datePickerUi } 
-						onSetDate={ date =>{ this.setDate( date ) } }
+						onDatePick={ ( dateObj )=>{ this.onDatePick( dateObj ) }}
 					/>
+					<input type='date' hidden onChange={(e)=>{ e.preventDefault() }} value={ this.state.dateInputVal } />
 				</div>
 			</div>
 		)

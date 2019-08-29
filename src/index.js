@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
 		<h1>React Date Picker</h1>
-		<DatePicker />		
+			<DatePicker />		
     </div>
   );
 }

@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-music-player/static/css/main.6f1fa3f8.chunk.css",
-    "main.js": "/react-music-player/static/js/main.7aee35fc.chunk.js",
-    "main.js.map": "/react-music-player/static/js/main.7aee35fc.chunk.js.map",
-    "runtime~main.js": "/react-music-player/static/js/runtime~main.6acfd43f.js",
-    "runtime~main.js.map": "/react-music-player/static/js/runtime~main.6acfd43f.js.map",
-    "static/js/2.bbc1ebeb.chunk.js": "/react-music-player/static/js/2.bbc1ebeb.chunk.js",
-    "static/js/2.bbc1ebeb.chunk.js.map": "/react-music-player/static/js/2.bbc1ebeb.chunk.js.map",
-    "index.html": "/react-music-player/index.html",
-    "precache-manifest.c7167b6f1dcd11ef4a8db95c99ecbfc4.js": "/react-music-player/precache-manifest.c7167b6f1dcd11ef4a8db95c99ecbfc4.js",
-    "service-worker.js": "/react-music-player/service-worker.js",
-    "static/css/main.6f1fa3f8.chunk.css.map": "/react-music-player/static/css/main.6f1fa3f8.chunk.css.map"
+    "main.css": "/react-datepicker/static/css/main.6f1fa3f8.chunk.css",
+    "main.js": "/react-datepicker/static/js/main.7aee35fc.chunk.js",
+    "main.js.map": "/react-datepicker/static/js/main.7aee35fc.chunk.js.map",
+    "runtime~main.js": "/react-datepicker/static/js/runtime~main.6990749b.js",
+    "runtime~main.js.map": "/react-datepicker/static/js/runtime~main.6990749b.js.map",
+    "static/js/2.bbc1ebeb.chunk.js": "/react-datepicker/static/js/2.bbc1ebeb.chunk.js",
+    "static/js/2.bbc1ebeb.chunk.js.map": "/react-datepicker/static/js/2.bbc1ebeb.chunk.js.map",
+    "index.html": "/react-datepicker/index.html",
+    "precache-manifest.ca7a4ae863f3d80ac7beb24b21ecb0f5.js": "/react-datepicker/precache-manifest.ca7a4ae863f3d80ac7beb24b21ecb0f5.js",
+    "service-worker.js": "/react-datepicker/service-worker.js",
+    "static/css/main.6f1fa3f8.chunk.css.map": "/react-datepicker/static/css/main.6f1fa3f8.chunk.css.map"
   }
 }
